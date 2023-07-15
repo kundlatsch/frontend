@@ -14,11 +14,13 @@ function BookList() {
 
   return (
     <div className="BookList">
+      <div className="ListOptions">
+        
+      </div>
       {
         isLoading ? <p>Loading...</p> :
         error? error.message :
         booksData ? booksData.map(book => {
-            console.log(book)
             return (
                 <Book data={book.book_details[0]} amazon_url={book.amazon_product_url} rank={book.rank}></Book>
             )

@@ -1,0 +1,39 @@
+.ListSelection {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ListSelection select{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    color: #000000;
+    background: #e2e2e2;
+    text-align: left;
+    padding: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ListSelection select:hover {
+    background: #a3a3a3;
+}
+
+.ListSelection button {
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    background: #e2e2e2;
+    text-align: center;
+    padding: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ListSelection button:hover {
+    background: #a3a3a3;
+}
