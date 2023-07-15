@@ -17,7 +17,7 @@ export const listsTitles = [
     },
     {
         display: "Paperback Trade Fiction",
-        value: "paperback-trade-fiction" 
+        value: "trade-fiction-paperback" 
     },
     {
         display: "Paperback Nonfiction",
@@ -30,6 +30,10 @@ export const listsTitles = [
     {
         display: "Children's Middle Grade Hardcover",
         value: "childrens-middle-grade-hardcover" 
+    },
+    {
+        display: "Children's Series",
+        value: "series-books"
     },
     {
         display: "Young Adult Hardcover",

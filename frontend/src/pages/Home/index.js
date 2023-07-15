@@ -1,4 +1,6 @@
 import { React, useEffect, useState} from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { listsTitles } from '../../data/listsTitles';
 
 import './styles.css';
@@ -6,11 +8,12 @@ import './styles.css';
 
 function Home() {
 
+  let navigate = useNavigate();
+
   const [list, setList] = useState("hardcover-fiction")
 
   const handleButtonClick = () => {
-    // TODO: add navigation passing list value as param
-    console.log(list)
+    navigate(`/list/${list}`)
   }
 
   return (

@@ -1,5 +1,5 @@
 import { React, useEffect, useState} from 'react';
-import BooksClient from '../../services/BooksAPI';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useBookList } from '../../hooks/useBookList';
 
 import './styles.css';
@@ -7,7 +7,8 @@ import './styles.css';
 
 function BookList() {
 
-  const { booksData, isLoading, error } = useBookList("combined-print-and-e-book-nonfiction")
+  let { list } = useParams();
+  const { booksData, isLoading, error } = useBookList(list)
 
   return (
     <div>
