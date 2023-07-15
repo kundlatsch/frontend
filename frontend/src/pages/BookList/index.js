@@ -1,6 +1,8 @@
 import { React, useEffect, useState} from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+
 import { useBookList } from '../../hooks/useBookList';
+import Book from './components/Book';
 
 import './styles.css';
 
@@ -11,14 +13,14 @@ function BookList() {
   const { booksData, isLoading, error } = useBookList(list)
 
   return (
-    <div>
-      <h1>BookList:</h1>
+    <div className="BookList">
       {
         isLoading ? <p>Loading...</p> :
         error? error.message :
         booksData ? booksData.map(book => {
+            console.log(book)
             return (
-                <div>{book.book_details[0].title}</div>
+                <Book data={book.book_details[0]} amazon_url={book.amazon_product_url} rank={book.rank}></Book>
             )
         }) : ''
       }

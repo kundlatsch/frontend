@@ -1,0 +1,26 @@
+.Book {
+    font-size: 12px;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    background: #e2e2e2;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.Book:hover {
+    background: #f7f7f7;
+    transform: scale(1.05);
+}
+
+.Book a {
+    text-decoration: none;
+}
+
+.Book a:hover {
+    text-decoration: underline;
+}
