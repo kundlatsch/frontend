@@ -24,8 +24,7 @@ export const useBookList = (list) => {
   }
 
   useEffect(() => {
-    console.log('é os guri')
-    fetchData().then(() => console.log('blz', booksData));
+    fetchData();
   }, []);
 
   return { booksData, isLoading, error };
