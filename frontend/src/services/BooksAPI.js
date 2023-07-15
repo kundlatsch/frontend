@@ -7,7 +7,7 @@ const BooksClient = axios.create({
 
 BooksClient.interceptors.request.use((config) => {
     config.params = config.params || {};
-    config.params['api-key'] = "mRqulRyiIowPbxRT9npmrlw3Two2mewy";
+    config.params['api-key'] = process.env.REACT_APP_NYT_BOOKS_API_KEY;
     return config;
 });
 
