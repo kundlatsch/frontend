@@ -25,7 +25,7 @@ export const useBookList = (list) => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [list]);
 
   return { booksData, isLoading, error };
 };
