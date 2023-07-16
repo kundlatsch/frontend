@@ -1,5 +1,5 @@
-import { React, useEffect, useState} from 'react';
-import { useParams, useLocation, useNavigate } from 'react-router-dom';
+import { React } from 'react';
+import { useParams } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 

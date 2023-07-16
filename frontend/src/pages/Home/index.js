@@ -1,7 +1,8 @@
-import { React, useEffect, useState} from 'react';
+import { React } from 'react';
+
+import ListSelection from '../../shared_components/ListSelection';
 
 import './styles.css';
-import ListSelection from '../../shared_components/ListSelection';
 
 
 function Home() {
@@ -12,7 +13,6 @@ function Home() {
       <h1>The New York Times Best Sellers</h1>
       <h3>Journey into Literary Triumph: Unveiling the Epitome of Modern Success</h3>
       <ListSelection></ListSelection>
-      
     </div>
   )
 }
